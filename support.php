@@ -18,7 +18,13 @@ include "nav.php";
 ?>
 
 <main>
-
+<section id="top">
+    <h2>Támogatás és segítség</h2>
+    <p>"Kedves Látogató!<br>Örülünk, hogy idekattintottál és támogatni és segíteni szeretnéd a menhelyet, valamint munkánkat. Ezt az alábbi három módon teheted meg:"</p>
+    <a href="#sétáltatás">Kutyasétáltatás</a>
+    <a href="#adományok">Adományozás</a>
+    <a href="#vöf">Virtuális örökbefogadás</a>
+</section>do it Csenge do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it do it
 </main>
     <?php
     include "footer.php";
