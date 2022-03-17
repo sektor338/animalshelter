@@ -18,13 +18,13 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
 #navbar a:hover {
     background-color: #ddd;
-    color: #464646;
+    color: #000000;
 }
 
 
@@ -41,6 +41,9 @@ body{
     #navbar a:not(:first-child) {display: none;}
     #navbar a.icon {
         float: right;
+        display: block;
+    }
+    #navbar {
         display: block;
     }
 }
