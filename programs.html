@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/programs.css">
     <script src="js/main.js"></script>
     <title>Harcosok Klubja Állatmenhely</title>
     <link rel="icon" href="pictures/tabicons/husky.png">
@@ -14,24 +15,71 @@
 
 </head>
 <body>
+<header>
+
+</header>
 <nav>
     <div id="navbar" class="topnav">
         <a href="index.html">Kezdőlap</a>
         <a href="angels.html">Védencek</a>
         <a href="contact.html">Kapcsolat</a>
         <a href="support.html">Támogatás</a>
-        <a href="programs.html">Programok</a>
+        <a id="active" href="programs.html">Programok</a>
         <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 </nav>
-<header>
-
-</header>
 
 <main>
-
+    <div id="top">
+        <h1 class="center">Programok</h1>
+        <p>Menhelyünk külnböző programlehetőégeket kínál az állatos élményekre vágyó gyerekeknek és felnőtteknek.</p>
+        <a class="gombok" href="#kseta">Közös sétáltatás</a><br>
+        <a class="gombok" href="#szulinap">Szülinap</a><br>
+        <a class="gombok" href="#tabor">Nyári tabor</a><br>
+    </div>
+    <div id="kseta">
+        <h2>Közös sétáltatás</h2>
+        <p>A menhely Kocsis Lia kolléganőnk vezetésével közös sétákat szervez havonta kétszer, szombatoként.
+            Amennyiben úgy gondolod, hogy kutyáddal szívesen csatlakoznátok a csapathoz a hónap első és harmadik
+            szombatján pontban 10 órakkor indul a séta a menhely bejárata elől. Amennyiben jönnél, de valamilen okból
+            késel, Liát eléred az alábbi telefonszámon: +36204570951.</p>
+        <p>A közös séta külső helyszínen zajlik.</p>
+        <p>A közös séta <strong>saját felelősség</strong>! Te felelsz a kutyádért és saját magadért!</p>
+    </div>
+    <div id="szulinap">
+        <h2>Szülinap</h2>
+        <p>A menhelyen lehetőség nyílik születésnapi bulikat rendezni. Az alábbi csomgajaink körül biztosan megtalálod a neked tetszőt:</p>
+        <table class="center">
+            <colgroup>
+                <col id="col-01">
+                <col id="col-02" span="2">
+            </colgroup>
+            <tbody><tr>
+                <th id="nev">Pizza neve</th>
+                <th id="ar">Ár</th>
+                <th id="extra">Rendelés esetén jár még</th>
+            </tr>
+            <tr>
+                <td headers="nev">Sonkás pizza, Irinyi 217 módra</td>
+                <td headers="ar">1800 Ft</td>
+                <td headers="extra" rowspan="3">Ajándék szósz és üdítő</td>
+            </tr>
+            <tr>
+                <td headers="nev">A gólyák kedvence</td>
+                <td headers="ar">2000 Ft</td>
+            </tr>
+            <tr>
+                <td headers="nev">"Nemnegatív epszilon" négysajtos pizza</td>
+                <td headers="ar">2100 Ft</td>
+            </tr>
+            <tr>
+                <td headers="nev">Kalkulus megajánlottasok pizzája</td>
+                <td headers="ar extra" colspan="2">NEM RENDELHETŐ!</td>
+            </tr>
+            </tbody></table>
+    </div>
 </main>
 <footer>
 

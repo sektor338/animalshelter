@@ -1,9 +1,11 @@
-body{
+body {
     background-color: #15CDAF;
     margin: 0;
     font-family: 'Marck Script', cursive;
 }
-
+#active{
+    color: #15CDAF !important;
+}
 #navbar {
     display: flex;
     background-color: #464646;
@@ -11,20 +13,26 @@ body{
     justify-content: space-evenly;
 }
 
-
+.center{
+    text-align: center;
+}
 #navbar a {
     display: inline-block;
-    color: #D2CDAF;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 25px;
+
+    background:
+            linear-gradient(currentColor 0 0)
+            bottom /var(--d, 0) 5px
+            no-repeat;
+    transition:0.5s;
 }
 
-
 #navbar a:hover {
-    background-color: #ddd;
-    color: #000000;
+    --d: 100%;
 }
 
 
@@ -38,23 +46,31 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-    #navbar a:not(:first-child) {display: none;}
+    #navbar a:not(:first-child) {
+        display: none;
+    }
+
     #navbar a.icon {
         float: right;
         display: block;
     }
+
     #navbar {
         display: block;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #navbar.responsive {position: relative;}
+    #navbar.responsive {
+        position: relative;
+    }
+
     #navbar.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     #navbar.responsive a {
         float: none;
         display: block;

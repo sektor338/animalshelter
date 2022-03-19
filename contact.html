@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="js/main.js"></script>
     <title>Harcosok Klubja Állatmenhely</title>
     <link rel="icon" href="pictures/tabicons/husky.png">
@@ -13,11 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<header>
+
+</header>
 <nav>
     <div id="navbar" class="topnav">
         <a href="index.html">Kezdőlap</a>
         <a href="angels.html">Védencek</a>
-        <a href="contact.html">Kapcsolat</a>
+        <a id="active" href="contact.html">Kapcsolat</a>
         <a href="support.html">Támogatás</a>
         <a href="programs.html">Programok</a>
         <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
@@ -25,57 +29,42 @@
         </a>
     </div>
 </nav>
-<header>
-
-</header>
 
 <main>
-    <form action="microservices/feldolgoz.php" method="POST" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Regisztrációs adatok</legend>
-            <label>Teljes név: <input type="text" name="full-name" size="25"/></label> <br/>
-            <label>Felhasználónév: <input type="text" name="username" required/></label> <br/>
-            <label>Jelszó: <input type="password" name="passwd" required/></label> <br/>
-            <label>Jelszó ismét: <input type="password" name="passwd-check" required/></label> <br/>
-            <label>Születési dátum: <input type="date" name="date-of-birth" min="1920-01-01"/></label> <br/>
-            <label>E-mail: <input type="email" name="email" required/></label> <br/>
-            <label>Felhasználói azonosító: <input type="number" name="user-id" value="12345" disabled/></label> <br/>
-        </fieldset>
+    <h1 class="center">Elérhetőségek</h1>
+    <p class="center">Harcosok Klubja Állatmenhely</p>
+    <p class="center">6724 Szeged, Kossuth Lajos sgrt. 72.</p>
+    <p class="center">06 1 230 40 50</p>
+    <p class="center">hak.iroda@hak.hu</p>
+    <p class="center">nyitvatartás:</p>
 
-        <label for="education">Legmagasabb iskolai végzettség:</label>
-        <select id="education">
-            <option value="elementary">8 általános</option>
-            <option value="highschool">Érettségi</option>
-            <option value="university">Felsőfokú végzettség</option>
-            <option value="other" selected>Egyéb</option>
-        </select> <br/>
 
-        Nem:
-        <label for="op1">Férfi:</label>
-        <input type="radio" id="op1" name="sex" value="m"/>
-        <label for="op2">Nő:</label>
-        <input type="radio" id="op2" name="sex" value="f"/>
-        <label for="op3">Egyéb:</label>
-        <input type="radio" id="op3" name="sex" value="other" checked/> <br/>
+    <table>
+        <tbody>
+        <tr>
+            <td>Hétfő-Szerda</td>
+            <td>11:00-20:00</td>
+        </tr>
+        <tr>
+            <td>Csütörtök</td>
+            <td>09:00-13:00</td>
+        </tr>
+        <tr>
+            <td>Péntek</td>
+            <td>12:00-20:00</td>
+        <tr>
+            <td>Hétvége</td>
+            <td>10:00-19:00</td>
+        </tr>
+        </tbody>
+    </table>
 
-        Hobbik:
-        <label for="hobby-1">Fotózás:</label>
-        <input type="checkbox" id="hobby-1" name="hobby-1" value="photo"/>
-        <label for="hobby-2">Főzés:</label>
-        <input type="checkbox" id="hobby-2" name="hobby-2" value="cooking"/>
-        <label for="hobby-3">Sorozatnézés:</label>
-        <input type="checkbox" id="hobby-3" name="hobby-3" value="series"/> <br/>
-
-        <label>Profilkép: <input type="file" name="profile-pic"/></label> <br/>
-        <label for="introduction">Bemutatkozás (max. 200 karakter):</label> <br/>
-        <textarea id="introduction" name="intro" maxlength="200"></textarea> <br/>
-
-        <input type="reset" name="reset-btn" value="Adatok törlése"/>
-        <input type="submit" name="submit-btn" value="Adatok elküldése"/>
-    </form>
 </main>
-<?php
-include "footer.php";
-?>
+<footer>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.314824757317!2d20.129179751422065!3d46.26384738764723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474487e66b1d3ead%3A0x2cda1e07e382a7c5!2zS8Ohcm9seWkgTWlow6FseSBLb2xsw6lnaXVt!5e0!3m2!1shu!2shu!4v1647701127910!5m2!1shu!2shu"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</footer>
 </body>
 </html>
