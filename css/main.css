@@ -2,14 +2,29 @@ body {
     background-color: #15CDAF;
     margin: 0;
     font-family: 'Marck Script', cursive;
+    font-size: 25px;
 }
+main{
+    padding-top: 60px;
+}
+a{
+    color: #464646;
+}
+a:visited{
+    color: #464646;
+}
+
 #active{
     color: #15CDAF !important;
 }
 #navbar {
+    position: fixed;
+    overflow: hidden;
+    z-index: 100;
+    top: 0;
+    width: 100%;
     display: flex;
     background-color: #464646;
-    overflow: hidden;
     justify-content: space-evenly;
 }
 
@@ -22,7 +37,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
 
     background:
             linear-gradient(currentColor 0 0)
@@ -45,6 +60,51 @@ body {
     display: none;
 }
 
+input[type]{
+    width: 300px;
+    height: 30px;
+    padding: 2px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 5px;
+}
+#cblabel>input[type="checkbox"]{
+    width: 30px !important;
+}
+
+
+input[type="submit"], input[type="reset"]{
+    cursor: pointer;
+    height: 35px;
+
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #464646;
+    color: white;
+
+}
+select{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 5px;
+}
+textarea{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 5px;
+}
+.link{
+    color: white !important;
+}
+.link:hover{
+    color: #e1aa2f !important;
+}
 @media screen and (max-width: 600px) {
     #navbar a:not(:first-child) {
         display: none;
@@ -58,13 +118,6 @@ body {
     #navbar {
         display: block;
     }
-}
-
-@media screen and (max-width: 600px) {
-    #navbar.responsive {
-        position: relative;
-    }
-
     #navbar.responsive a.icon {
         position: absolute;
         right: 0;

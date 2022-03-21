@@ -8,6 +8,11 @@ section{
     color: white;
     font-size: 35px;
 }
+h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
 .animaltab{
     max-width: 350px;
     background-color: #464646;
@@ -19,30 +24,25 @@ section{
 }
 .animaltabimg{
     max-width: 300px;
+    height: 200px;
     border-style: none;
     border-radius: 10px;
     margin-top: 15px;
 
 }
-.animaltabp{
-    text-align: center;
-    margin: 0;
-    color: #000000;
-    font-size: 20px;
-}
-.animaltabimgdiv{
-
-}
 .animalname{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     color: #000000;
+    font-weight: bold;
 }
-
+.animalname:hover{
+    color: #e1aa2f;
+}
 
  .card {
     position: relative;
-    max-width : 300px;
+    width : 300px;
     height : 200px;
     background-color : white;
     margin : 30px 10px;
@@ -55,13 +55,15 @@ section{
     border-radius : 15px;
 }
 .card:hover {
-    height : 420px;
+    height : 300px;
 }
 
 
 .card .image {
     position : relative;
-    top : -25%;
+    top : -40%;
+    display: flex;
+    justify-content: center;
     border-radius : 15px;
     z-index : 1;
 }
@@ -92,3 +94,11 @@ section{
     transition-delay: 0.2s;
 
 }
+
+ .iconimg{
+     width: 25px;
+ }
+
+ td{
+     width: 50px;
+ }

@@ -1,6 +1,37 @@
 h1{
     color: white;
+    font-size: 35px;
 }
 h2{
     color: white;
+    font-size: 30px;
+}
+
+.textdiv{
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: rgba(70, 70, 70, 0.51);
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+}
+
+input[type="checkbox"]{
+    width: 30px !important;
+}
+table{
+    width: 100%;
+}
+td{
+    width: 100px;
+}
+li{
+    text-align: left;
+}
+@media screen and (max-width: 600px) {
+    .textdiv{
+        margin: 10px;
+    }
 }
