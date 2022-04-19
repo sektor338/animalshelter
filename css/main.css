@@ -13,7 +13,16 @@ a{
 a:visited{
     color: #464646;
 }
-
+.textdiv{
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: rgba(70, 70, 70, 0.5);
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+}
 #active{
     color: #15CDAF !important;
 }

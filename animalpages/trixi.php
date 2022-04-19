@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <?php
+    session_start();
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
@@ -18,33 +21,23 @@
 <header>
 
 </header>
-<nav>
-    <div id="navbar" class="topnav">
-        <a href="../index.html">Kezdőlap</a>
-        <a href="../angels.html">Védencek</a>
-        <a href="../contact.html">Kapcsolat</a>
-        <a href="../support.html">Támogatás</a>
-        <a href="../programs.html">Programok</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+
+<?php include_once 'navbar.php' ?>
 <main>
     <div id="maindiv">
         <div id="headerdiv">
             <div id="leftheaderdiv">
-                <img class="animaltabimg" src="../pictures/animaltabs/vattacukor1.jpg" alt="animalimg">
+                <img class="animaltabimg" src="../pictures/animaltabs/trixi1.jpg" alt="animalimg">
             </div>
             <div id="rightheaderdiv">
-                <a class="animalname">Vattacukor</a>
+                <a class="animalname">Trixi</a>
                 <table style="text-align: center; width: 100%">
                     <tr>
                         <td>
                             <img class="iconimg" src="../pictures/icons/pawprint.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Láma</a>
+                            <a>Őz</a>
                         </td>
                     </tr>
                     <tr>
@@ -52,15 +45,23 @@
                             <img class="iconimg" src="../pictures/icons/gender.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Nőstény</a>
+                            <a>Suta</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="iconimg" src="../pictures/icons/type.svg" alt="type">
+                        </td>
+                        <td>
+                            <a>Európai őz</a>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
         <div id="contentdiv">
-            <p>Vattacukor egy felelőtlen vásárlás miatt került gondozásunkba. Előző gazdája nem nézett utána a lámák tartásának, így későn szembesült ennek nehézségeivel. Ezek után egy felelősségteljes döntést hozott és átadta az állatot hozzáértő és felkészült csapatunknak.
-                Vattacukor egy igazi társasági lény, nagyon szerteti, ha látogatóink foglalkoznak vele, különösen ha megetetik a nálunk kapható csemegével. Úgyhogy velünk együtt ő is sok szeretettel vár Titeket a menhelyen.
+            <p>Trixi története egy súlyos autóbalesettel kezdődött. Az őz lába eltört, több zúzódása volt és sokkos állapotban hozta be hozzánk a halálra rémült sofőr. Orvosi csapatunk elvégezte a szükséges intézkedéseket, így fiatal suta elkezdhette lábadozásást, ami alatt örök barátságot kötött a menhely három szárnyasával.
+                Trixi félénk és bizalmatlan, de ennek örülünk, mert amint végetér a lábadozása visszatérhet társaihoz a szabadba.
 
             </p>
         </div>

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <?php
+    session_start();
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
@@ -18,33 +21,23 @@
 <header>
 
 </header>
-<nav>
-    <div id="navbar" class="topnav">
-        <a href="../index.html">Kezdőlap</a>
-        <a href="../angels.html">Védencek</a>
-        <a href="../contact.html">Kapcsolat</a>
-        <a href="../support.html">Támogatás</a>
-        <a href="../programs.html">Programok</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+
+<?php include_once '../navbar.php' ?>
 <main>
     <div id="maindiv">
         <div id="headerdiv">
             <div id="leftheaderdiv">
-                <img class="animaltabimg" src="../pictures/animaltabs/americano1.jpg" alt="animalimg">
+                <img class="animaltabimg" src="../pictures/animaltabs/amy1.jfif" alt="animalimg">
             </div>
             <div id="rightheaderdiv">
-                <a class="animalname">Americano</a>
+                <a class="animalname">Amy</a>
                 <table style="text-align: center; width: 100%">
                     <tr>
                         <td>
                             <img class="iconimg" src="../pictures/icons/pawprint.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Macska</a>
+                            <a>Kutya</a>
                         </td>
                     </tr>
                     <tr>
@@ -52,7 +45,7 @@
                             <img class="iconimg" src="../pictures/icons/gender.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Kandúr</a>
+                            <a>Szuka</a>
                         </td>
                     </tr>
                     <tr>
@@ -60,14 +53,16 @@
                             <img class="iconimg" src="../pictures/icons/type.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Európai rövidszőrű</a>
+                            <a>Keverék</a>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
         <div id="contentdiv">
-            <p>Három testvér vagyunk, anyukánkkal érkeztünk a menhelyre. Ő hamar megenyhült, mi viszont még nem annyira bízunk meg az emberekben. Egy lelkes önkéntes segítségével sokat fejlődtünk, de még mindig messze vagyunk az igazitól. Ezen sokat segíthetne egy szerető család, aki rengeteg türelemmel rendelkezik és szereti a kihívásokat. Nem rettenti meg, ha a végleges szelídítésem napokig, akár hetekig is eltart, cserébe annál nagyobb lesz az öröm, amikor magamtól először odabújok majd.
+            <p>Ránézésre igazán szép és kedves kutyahölgy vagyok, ami valóban igaz, mélyen belül, de a látszat teljesen ne tévesszen meg. Az újfehértói gyepiről kerültem a Rex Alapítvány gondozásába, ezért korábbi életemről semmit sem lehet tudni, de az biztos, hogy életemet eddig izoláltan élhettem (láncon, vagy kennelben) és még az sem kizárt, hogy bántalmaztak is. Bekerülésem pillanatában gondozóim napokig nem is láttak, annyira féltem, rettegtem mindentől, de hála kitartó munkáinknak és a töretlen foglalkozásuknak, ma már egész könnyedén pórázra vehető vagyok. Eleinte krokodilforgásszerű vergődésem helyett, mostanra már felemelt farokkal sétálok, azonban bizalmam továbbra sem teljes.
+                Még mindig nagyon sok foglalkozásra és rehabilitációra szorulok, de egy pár finom falatért, már könnyedén nyitok, megkörnyékezek bárkit, de azért az idegenek még ne közelítsenek meg engem.
+                Ha úgy érzed, hogy elég türelmes és kitartó vagy ahhoz, hogy örökké szóló társat nevelj belőlem, emellett távol élsz a várostól és magad mellett a házban tartanál engem, akkor ne habozz jelentkezni értem! Hidd el, hogy sokszorosával fogom meghálálni!
 
             </p>
         </div>

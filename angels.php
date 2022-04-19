@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <?php
+    session_start();
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
@@ -18,11 +21,22 @@
 </header>
 <nav>
     <div id="navbar" class="topnav">
-        <a href="index.html">Kezdőlap</a>
-        <a id="active" href="angels.html">Védencek</a>
-        <a href="programs.html">Programok</a>
-        <a href="support.html">Támogatás</a>
-        <a href="contact.html">Kapcsolat</a>
+        <a href="index.php">Kezdőlap</a>
+        <a id="active" href="angels.php">Védencek</a>
+        <a href="programs.php">Programok</a>
+        <a href="support.php">Támogatás</a>
+        <a href="contact.php">Kapcsolat</a>
+        <?php
+        if(!isset($_SESSION['username'])){
+            echo '<a href="login.php">Bejelentkezés</a>';
+            echo '<a href="register.php">Regisztráció</a>';
+        }
+        else{
+            echo '<form action="microservices/logout.inc.php" method="post">
+                        <button style="cursor: pointer; font-size: 20px; vertical-align: super; background-color: #464646; border-style: none" type="submit" id="logout" name="logout"><a>Kijelentkezés</a></button>
+                  </form>';
+        }
+        ?>
         <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
             <i class="fa fa-bars"></i>
         </a>
@@ -39,7 +53,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/madzag.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/madzag.html" class="animalname">Madzag</a>
+                        <a href="animalpages/madzag.php" class="animalname">Madzag</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -77,7 +91,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/molly1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/molly.html" class="animalname">Molly</a>
+                        <a href="animalpages/molly.php" class="animalname">Molly</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -115,7 +129,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/picur1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/picur.html" class="animalname">Picúr</a>
+                        <a href="animalpages/picur.php" class="animalname">Picúr</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -153,7 +167,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/axel1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/axel.html" class="animalname">Axel</a>
+                        <a href="animalpages/axel.php" class="animalname">Axel</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -193,7 +207,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/amy1.jfif" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/amy.html" class="animalname">Amy</a>
+                        <a href="animalpages/amy.php" class="animalname">Amy</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -231,7 +245,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/bella1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/Bella.html" class="animalname">Bella</a>
+                        <a href="animalpages/Bella.php" class="animalname">Bella</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -270,7 +284,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/barack1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/barack.html" class="animalname">Barack</a>
+                        <a href="animalpages/barack.php" class="animalname">Barack</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -308,7 +322,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/americano1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/americano.html" class="animalname">Americano</a>
+                        <a href="animalpages/americano.php" class="animalname">Americano</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -349,7 +363,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/vattacukor1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/vattacukor.html" class="animalname">Vattacukor</a>
+                        <a href="animalpages/vattacukor.php" class="animalname">Vattacukor</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -379,7 +393,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/dinka1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/dinka.html" class="animalname">Dinka</a>
+                        <a href="animalpages/dinka.php" class="animalname">Dinka</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -417,7 +431,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/trixi1.jpg" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/trixi.html" class="animalname">Trixi</a>
+                        <a href="animalpages/trixi.php" class="animalname">Trixi</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>
@@ -455,7 +469,7 @@
                         <img class="animaltabimg" src="pictures/animaltabs/libak1.png" alt="animalimg">
                     </div>
                     <div class="content">
-                        <a href="animalpages/zlibak.html" class="animalname">Zefír/Zoé/Zaza</a>
+                        <a href="animalpages/zlibak.php" class="animalname">Zefír/Zoé/Zaza</a>
                         <table style="text-align: center; width: 100%">
                             <tr>
                                 <td>

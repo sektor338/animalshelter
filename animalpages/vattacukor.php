@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <?php
+    session_start();
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
@@ -18,33 +21,23 @@
 <header>
 
 </header>
-<nav>
-    <div id="navbar" class="topnav">
-        <a href="../index.html">Kezdőlap</a>
-        <a href="../angels.html">Védencek</a>
-        <a href="../contact.html">Kapcsolat</a>
-        <a href="../support.html">Támogatás</a>
-        <a href="../programs.html">Programok</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+
+<?php include_once 'navbar.php' ?>
 <main>
     <div id="maindiv">
         <div id="headerdiv">
             <div id="leftheaderdiv">
-                <img class="animaltabimg" src="../pictures/animaltabs/barack1.jpg" alt="animalimg">
+                <img class="animaltabimg" src="../pictures/animaltabs/vattacukor1.jpg" alt="animalimg">
             </div>
             <div id="rightheaderdiv">
-                <a class="animalname">Barack</a>
+                <a class="animalname">Vattacukor</a>
                 <table style="text-align: center; width: 100%">
                     <tr>
                         <td>
                             <img class="iconimg" src="../pictures/icons/pawprint.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Macska</a>
+                            <a>Láma</a>
                         </td>
                     </tr>
                     <tr>
@@ -55,19 +48,12 @@
                             <a>Nőstény</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img class="iconimg" src="../pictures/icons/type.svg" alt="pawn">
-                        </td>
-                        <td>
-                            <a>Eursz</a>
-                        </td>
-                    </tr>
                 </table>
             </div>
         </div>
         <div id="contentdiv">
-            <p>A menhely területén levő traktor alól előbújva találtak rám. Nagyon barátságos és bújós típus vagyok viszont még tinédzser, így hatalmas a mozgásigényem. Játék közben nem tudom hogy hol a határ, ezért erősen harapok. Olyan gazdira van szükségem aki megmutatja nekem hogyan viselkedjek kifinomultabban.
+            <p>Vattacukor egy felelőtlen vásárlás miatt került gondozásunkba. Előző gazdája nem nézett utána a lámák tartásának, így későn szembesült ennek nehézségeivel. Ezek után egy felelősségteljes döntést hozott és átadta az állatot hozzáértő és felkészült csapatunknak.
+                Vattacukor egy igazi társasági lény, nagyon szerteti, ha látogatóink foglalkoznak vele, különösen ha megetetik a nálunk kapható csemegével. Úgyhogy velünk együtt ő is sok szeretettel vár Titeket a menhelyen.
 
             </p>
         </div>

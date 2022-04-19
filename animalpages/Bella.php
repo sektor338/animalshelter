@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <?php
+    session_start();
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
@@ -18,26 +21,16 @@
 <header>
 
 </header>
-<nav>
-    <div id="navbar" class="topnav">
-        <a href="../index.html">Kezdőlap</a>
-        <a href="../angels.html">Védencek</a>
-        <a href="../contact.html">Kapcsolat</a>
-        <a href="../support.html">Támogatás</a>
-        <a href="../programs.html">Programok</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+
+<?php include_once 'navbar.php' ?>
 <main>
     <div id="maindiv">
         <div id="headerdiv">
             <div id="leftheaderdiv">
-                <img class="animaltabimg" src="../pictures/animaltabs/amy1.jfif" alt="animalimg">
+                <img class="animaltabimg" src="../pictures/animaltabs/bella1.jpg" alt="animalimg">
             </div>
             <div id="rightheaderdiv">
-                <a class="animalname">Amy</a>
+                <a class="animalname">Bella</a>
                 <table style="text-align: center; width: 100%">
                     <tr>
                         <td>
@@ -67,9 +60,16 @@
             </div>
         </div>
         <div id="contentdiv">
-            <p>Ránézésre igazán szép és kedves kutyahölgy vagyok, ami valóban igaz, mélyen belül, de a látszat teljesen ne tévesszen meg. Az újfehértói gyepiről kerültem a Rex Alapítvány gondozásába, ezért korábbi életemről semmit sem lehet tudni, de az biztos, hogy életemet eddig izoláltan élhettem (láncon, vagy kennelben) és még az sem kizárt, hogy bántalmaztak is. Bekerülésem pillanatában gondozóim napokig nem is láttak, annyira féltem, rettegtem mindentől, de hála kitartó munkáinknak és a töretlen foglalkozásuknak, ma már egész könnyedén pórázra vehető vagyok. Eleinte krokodilforgásszerű vergődésem helyett, mostanra már felemelt farokkal sétálok, azonban bizalmam továbbra sem teljes.
-                Még mindig nagyon sok foglalkozásra és rehabilitációra szorulok, de egy pár finom falatért, már könnyedén nyitok, megkörnyékezek bárkit, de azért az idegenek még ne közelítsenek meg engem.
-                Ha úgy érzed, hogy elég türelmes és kitartó vagy ahhoz, hogy örökké szóló társat nevelj belőlem, emellett távol élsz a várostól és magad mellett a házban tartanál engem, akkor ne habozz jelentkezni értem! Hidd el, hogy sokszorosával fogom meghálálni!
+            <p>Bella egy nagyszerű kutya, így egy hozzá hasonlóan nagyszerű Gazdit szeretne. Közepes/nagy testű,
+                sportos, emberrel végtelenül kedves, fiatal szuka. Rengeteg energiája van, amit le kell kötni, épp ezért
+                minden szeretetért, sétáért végtelenül hálás. Ragaszkodó, megfelelni vágyó kutya, akinek kellő
+                türelemmel és jó szóval meg lehet tanítani mindent.
+                Érdeklő és kíváncsi, de az új dolgok, idegen kutyák és emberek láttán elsőre izgatott viselkedéséből
+                következetességgel gyorsan kizökkenthető.
+                Eleven, de tanulni vágyó és fejlődésre nyitott. Olyan gazdit keres, aki mindennél jobban szereti,
+                emellett tisztában van fajtajellegéből és korából adódó magas energiájával, és szívesen viszi magával
+                sportolni, kutyasuliba, kirándulni.
+                Ki lesz az,aki segít Bellának felfedezni a világot és megmutatja neki, milyen a boldog gazdis élet?
 
             </p>
         </div>

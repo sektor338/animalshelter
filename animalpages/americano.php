@@ -18,33 +18,22 @@
 <header>
 
 </header>
-<nav>
-    <div id="navbar" class="topnav">
-        <a href="../index.html">Kezdőlap</a>
-        <a href="../angels.html">Védencek</a>
-        <a href="../contact.html">Kapcsolat</a>
-        <a href="../support.html">Támogatás</a>
-        <a href="../programs.html">Programok</a>
-        <a href="javascript:void(0);" class="icon" onclick="navbarMobile()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</nav>
+<?php include_once 'navbar.php' ?>
 <main>
     <div id="maindiv">
         <div id="headerdiv">
             <div id="leftheaderdiv">
-                <img class="animaltabimg" src="../pictures/animaltabs/dinka1.jpg" alt="animalimg">
+                <img class="animaltabimg" src="../pictures/animaltabs/americano1.jpg" alt="animalimg">
             </div>
             <div id="rightheaderdiv">
-                <a class="animalname">Dinka</a>
+                <a class="animalname">Americano</a>
                 <table style="text-align: center; width: 100%">
                     <tr>
                         <td>
                             <img class="iconimg" src="../pictures/icons/pawprint.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Róka</a>
+                            <a>Macska</a>
                         </td>
                     </tr>
                     <tr>
@@ -52,26 +41,24 @@
                             <img class="iconimg" src="../pictures/icons/gender.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Kan</a>
+                            <a>Kandúr</a>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="iconimg" src="../pictures/icons/type.svg" alt="type">
+                            <img class="iconimg" src="../pictures/icons/type.svg" alt="pawn">
                         </td>
                         <td>
-                            <a>Európai vörös róka</a>
+                            <a>Európai rövidszőrű</a>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
         <div id="contentdiv">
-            <p>Dinkára egy erdész talált rá egy rókalyukban, amelyben teljesen egyedül volt. Ez már akkor nem volt valami biztató jel, de kollégánk várt, hátha visszajönnek érte, de 24 óra elteltével úgy döntött, hogy elhozza hozzánk, hátha nálunk még van esélye. Csodálatos orvosi csapatunknak köszönhetően az apróság életben maradt és nálunk nevelkedett. Emiatt pedig annyira emberhez szokott, hogy már nem lenne képes egyedül élni az erdőben.
-                Dinka nagyon játékos, de közben félénk is, de amennyiben van időtök és ott töltötök hosszú perceket a kifutójánál egy idő után kimerészkedik és megismer benneteket.
+            <p>Három testvér vagyunk, anyukánkkal érkeztünk a menhelyre. Ő hamar megenyhült, mi viszont még nem annyira bízunk meg az emberekben. Egy lelkes önkéntes segítségével sokat fejlődtünk, de még mindig messze vagyunk az igazitól. Ezen sokat segíthetne egy szerető család, aki rengeteg türelemmel rendelkezik és szereti a kihívásokat. Nem rettenti meg, ha a végleges szelídítésem napokig, akár hetekig is eltart, cserébe annál nagyobb lesz az öröm, amikor magamtól először odabújok majd.
 
             </p>
-            <video controls src="../videos/foxvid.mp4"></video>
         </div>
     </div>
 </main>
